@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.omarica.sqlite.MainActivity">
+
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/surnameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameEditText"
+        android:layout_alignStart="@+id/nameEditText"
+        android:layout_below="@+id/nameEditText"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Surname"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/gradeEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/surnameEditText"
+        android:layout_alignStart="@+id/surnameEditText"
+        android:layout_below="@+id/surnameEditText"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Grade"
+        android:inputType="textPersonName"/>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gradeEditText"
+        android:layout_alignStart="@+id/gradeEditText"
+        android:layout_below="@+id/gradeEditText"
+        android:layout_marginTop="44dp"
+        android:text="Add Data"/>
+
+    <Button
+        android:id="@+id/viewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/gradeEditText"
+        android:layout_alignRight="@+id/gradeEditText"
+        android:layout_alignTop="@+id/addButton"
+        android:text="View All"/>
+</RelativeLayout>
